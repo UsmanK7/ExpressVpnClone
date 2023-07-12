@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.head{
+    height: 681.93px;
+    width: 100%;
+    background-image:url(cover.png);
+    background-size: cover;
+    background-position: center;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;    
+    
+}
+.head a{
+    text-decoration: none;
+    color: #001D2F;
+    margin: 0px 25px 0px 0px;
+    
+}
+.navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    position: sticky;
+}
+nav ul li{
+    height: 2em;
+    list-style: none;
+    font-weight: 500;
+    display: inline-block;
+    
+}
+nav ul li a:hover{
+    color: #0F866C;
+}
+.logo{
+    width: 208px;
+    height: 40px;
+    margin: 0px 15px 0px 0px;
+}
+#get{
+    width: 153.6px;
+    height: 40.79px;
+    padding: 8px 30px;
+    
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #0F866C;
+    color: #0F866C;
+    background-color: #f1eace;
+    margin-right: 18px;
+    transition: 0.2s;
+}
+#get:hover{
+    background-color: #d4e300;
+    color: black;
+    border: #d4e300;
+}
+.container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 7px;
+    margin-right: 25px;
+}
+.container img{
+    margin-right: 6px;
+}
+.container button{
+    border: none;
+    background-color: #f1eace;
+}
+
+#heading{   
+
+    vertical-align: baseline;
+    text-align: center;
+    color:RGB(0, 29, 47);
+    font-family: FS Kim,Georgia,serif;
+    font-size:98px;
+    line-height:147.96px;
+    letter-spacing: normal;
+    font-weight: bold;
+    
+}
+#subheading{
+    color:#001D2F;
+    font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    line-height:50px;
+    margin-top: 6px;
+    font-weight:700;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+}
+#but{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#getExpress{
+    width: 260.96px;
+    margin-top: 30px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: 2px solid #0F866C;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 35px;
+    background-color: #0F866C;
+    transition: 0.2s;
+}
+#getExpress:hover{
+    background-color: #d4e300;
+    color: black;
+    border: #d4e300;
+}
+#para{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#para p{
+    font-size:10px;
+    line-height:20px;
+    letter-spacing:1.4px;
+    font-weight:500;
+}
+
