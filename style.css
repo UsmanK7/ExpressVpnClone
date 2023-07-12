@@ -1,51 +1,67 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    
+}
 
-}
-.head{
-    height: 681.93px;
+header{
     width: 100%;
-    background-image:url(cover.png);
-    background-size: cover;
-    background-position: center;
-    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;    
-    
-}
-.head a{
-    text-decoration: none;
-    color: #001D2F;
-    margin: 0px 25px 0px 0px;
-    
-}
-.navbar{
     height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
     padding: 0px 40px;
-    position: sticky;
-}
-nav ul li{
-    height: 2em;
-    list-style: none;
-    font-weight: 500;
-    display: inline-block;
-    
-}
-nav ul li a:hover{
-    color: #0F866C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;   
 }
 .logo{
     width: 208px;
     height: 40px;
     margin: 0px 15px 0px 0px;
 }
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+header.scrolled{
+    background-color: white;
+    height: 80px;
+    opacity: 0.9;
+    .logo{
+        width: 208px;
+        height: 35px;
+        transition: 0.6s;
+    }
+    .container button{
+        border: none;
+        background-color: white;
+    }
+}
+.navlist{
+    text-decoration: none;
+    color: #001D2F;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    
+}
+.navlist:hover{
+    color: #0F866C;
+}
+
+header ul li {
+    position: relative;
+    
+    font-weight: 500;
+    margin: 0px 25px 0px 0px;
+}
 #get{
     width: 153.6px;
     height: 40.79px;
     padding: 8px 30px;
-    
     font-size: 16px;
     border-radius: 25px;
     border: 2px solid #0F866C;
@@ -63,8 +79,9 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     position: relative;
-    top: 7px;
+    top: 2px;
     margin-right: 25px;
+    
 }
 .container img{
     margin-right: 6px;
@@ -73,15 +90,22 @@ nav ul li a:hover{
     border: none;
     background-color: #f1eace;
 }
-
+#sec1{
+    
+    width: 100%;
+    height: 800px;
+    background-image: url(cover.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
 #heading{   
 
-    vertical-align: baseline;
     text-align: center;
     color:RGB(0, 29, 47);
     font-family: FS Kim,Georgia,serif;
-    font-size:98px;
-    line-height:147.96px;
+    font-size:90px;
+    line-height:363.96px;
     letter-spacing: normal;
     font-weight: bold;
     
@@ -90,7 +114,7 @@ nav ul li a:hover{
     color:#001D2F;
     font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     line-height:50px;
-    margin-top: 6px;
+    margin-top: -100px;
     font-weight:700;
     text-align: center;
     font-size: 25px;
@@ -136,3 +160,210 @@ nav ul li a:hover{
     font-weight:500;
 }
 
+#sec2{
+    width: 100%;
+    height: 469.99px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.secimg{
+    width: 369.99px;
+    height: 369.99px;
+}
+#sec2 h1{
+    font-size: 46px;
+    font-weight:500;
+    font-family: FS Kim,Georgia,serif;
+}
+#sec2 p{
+    margin-top: 20px;
+    font-family: FS Kim,Georgia,serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+#sec2 button{
+    width: 260.96px;
+    margin-top: 30px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: 2px solid #0F866C;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 35px;
+    background-color: #0F866C;
+    transition: 0.2s;
+}
+
+#sec2 button:hover{
+    background-color: #d4e300;
+    color: black;
+    border: #d4e300;
+}
+.sec3{
+    height: 487.97px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+
+.sec3 h1{
+    
+    font-size: 46px;
+    font-weight:500;
+    font-family: FS Kim,Georgia,serif;
+}
+.sec3 p{
+    margin-top: 20px;  
+    font-family: FS Kim,Georgia,serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+.thirdimg{
+    width: 370px;
+    height: 370px;
+    align-self: flex-end;    
+}
+
+#sec3{
+    width: 100%;
+    height: 469.99px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.thirdimg{
+    width: 369.99px;
+    height: 369.99px;
+}
+#sec3 h1{
+    font-size: 46px;
+    font-weight:500;
+    font-family: FS Kim,Georgia,serif;
+}
+#sec3 p{
+    margin-top: 20px;
+    font-family: FS Kim,Georgia,serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+#sec3 button{
+    width: 260.96px;
+    margin-top: 30px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: 2px solid #0F866C;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 35px;
+    background-color: #0F866C;
+    transition: 0.2s;
+}
+#sec3 ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+#sec3 button:hover{
+    background-color: #d4e300;
+    color: black;
+    border: #d4e300;
+}
+
+#sec4{
+    height: 499.96px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.sec4img{
+    width: 339.99px;
+    height: 173.29px;
+}
+.sec4h1{
+    font-size: 32px;
+    font-family: FS Kim,Georgia,serif;
+    font-weight: 500;
+    padding: 0px 30px 20px;
+}
+.sec4p{
+    font-size: 16px;
+    font-weight: 400;
+}
+#sec5{
+    width: 1263.33px;
+    height: 797.72px;
+    background-color: #dae8e7;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sec5div1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#sec5div2 img{
+    width: 877.5px;
+    height: 437.13px;
+}   
+#sec5div3 a{
+    font-size: 16px;
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    color: #0F866C;
+    font-weight: 100px;
+    
+}
+#footer{
+    height: 100px;
+    width: 100%;
+    background-color: #001827;
+    
+}
+#footcontainer{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0px 31.6667px;
+    padding: 0px 15px;
+}
+#copy{
+    width: 585px;
+    height: 21.59px;
+    padding: 0px 15px;
+
+}
+#copy p{
+    font-size: 12px;
+    font-family: Inter,Helvetica,Arial,sans-serif;
+    color: #CCD2D5;
+    font-weight: 400px;
+}
+#list li{
+    color: white;
+    margin: 10px;
+    
+}
+#list{
+    position: relative;
+    display: flex;
+    
+    list-style: none;
+}
